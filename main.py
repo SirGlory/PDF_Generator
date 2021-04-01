@@ -24,3 +24,6 @@ product3 = Product(name=name3, price= price3)
 pdf_report = PdfReport(filename=f"Invoice_{the_invoice.date}_{the_invoice.name}.pdf")
 pdf_report.generate(product1=product1, product2=product2,product3 = product3, invoice=the_invoice)
 
+# Share file on Cloud
+file_sharer = FileSharer(filepath = pdf_report.filename)
+print(file_sharer.share())
