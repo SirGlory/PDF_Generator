@@ -1,7 +1,7 @@
 # This is a PDF generator
 
 from datetime import date
-from pdfreport import PdfReport
+from pdfreport import PdfReport, FileSharer
 from product import Invoice, Product
 
 # Take user inputs and create instances
